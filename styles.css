@@ -8,7 +8,7 @@ body{
     background-color: black;
 }
 .container{
-    /* border: 2px solid red; */
+    
     height: 100vh;;
     width: 100%;
     margin: auto;
@@ -17,7 +17,7 @@ body{
      50%, #0000ff);
 }
 .head{
-    /* background-color: lightpink; */
+    
     display: flex;
     justify-content: center;
 }
@@ -29,8 +29,7 @@ h1{
     display: flex;
     justify-content: center;
     height: 50px;
-    /* padding-left: 10px; */
-    /* border-bottom: 1px solid red; */
+    
 
 }
 .inputfield{
@@ -41,7 +40,7 @@ h1{
     margin-right: 5px;
     font-size: 20px;
     border: none;
-    /* cursor: pointer; */
+    
     padding-left: 10px;
 }
 .add-task{
@@ -56,7 +55,7 @@ h1{
 }
 .sections{
     display: flex;
-    /* flex-direction: row; */
+    
     justify-content: center;
 }
 .box{
@@ -69,22 +68,22 @@ h1{
     font-weight: bold;
     font-size: 20px;
     border-radius: 10px;
-    /* overflow:scroll; */
-    /* position: relative; */
+
+
 }
 .section-heading{
     margin-left: 10px;
     margin-top: 10px;
-    /* position: absolute; */
+    
 }
 .added-element{
     width: 95%;
     height: 90%;
-    /* border: 1px solid red; */
+    
     border-radius: 10px;
     margin-left:5px;
     margin-top: 10px;
-    /* background-color: grey; */
+
     list-style-type: none;
     overflow: scroll;
 }

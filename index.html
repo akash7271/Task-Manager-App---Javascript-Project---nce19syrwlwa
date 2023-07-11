@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager App</title>
-    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="styles.css">
     <script src="App.js" defer></script>
 </head>
 <body>
+   
     <div class="container">
         <div class="head">
             <h1 class="heading">Task Manager Application</h1>
@@ -15,7 +17,7 @@
         
         
         <form  id="form" class="input-container">
-            <input type="text" id="input-value" class="inputfield" placeholder="New Task Name..."/>
+            <input type="text" id="todo" class="inputfield" placeholder="New Task Name..."/>
            
             <button id="btn" class="add-task">Add Task</button>
 
@@ -23,10 +25,7 @@
         <div class="sections">
             <div class="box open">
                 <h3 class="section-heading">OPEN</h3>
-                <ul class="added-element">
-                    <!-- <li class="item" draggable="true"> akash kumar</li> -->
-                    <!-- <li class="item" draggable="true"> akash kumar</li> -->
-                </ul>
+                <ul class="added-element"></ul>
             </div>
             <div class="box progress">
                 <h3 class="section-heading">IN PROGRESS</h3>
