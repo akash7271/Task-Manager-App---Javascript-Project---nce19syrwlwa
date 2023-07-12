@@ -1,16 +1,41 @@
 const inputValue=document.getElementById("todo");
 const addTask=document.querySelector(".add-task");
 const addedElement=document.querySelector(".added-element");
+
+
+
+
+
+
+
+
+
+// const details=document.getElementById("itemsdetail");
+// const submitbtn=document.getElementById("submitbtn");
+// const icon=document.querySelector(".icon");
+// newAddElement.addEventListener("click",(e)=>{
+//     e.preventDefault();
+//     const elemenvalue=newAddElement.textContent;
+//     details.style.display="block";
+//     icon.innerText=elemenvalue;
+//     submitbtn.addEventListener("click", ()=>{
+//         details.style.display="none";
+//     })
+
+// })
+
+
+
 addTask.addEventListener("click",(e)=>{
     e.preventDefault();
+    const newAddElement=document.createElement("li");
+    newAddElement.classList.add("item");
+    newAddElement.setAttribute("draggable","true");
     let innertext=inputValue.value;
     if(!innertext) return;
 
    
     
-    const newAddElement=document.createElement("li");
-    newAddElement.classList.add("item");
-    newAddElement.setAttribute("draggable","true");
     newAddElement.innerText=`${innertext}`;
    
     newAddElement.addEventListener("dragstart",()=>{
@@ -21,6 +46,32 @@ addTask.addEventListener("click",(e)=>{
     });
     addedElement.appendChild(newAddElement);
     inputValue.value="";
+
+
+
+    //  const items=document.querySelectorAll(".items");
+
+    const details=document.getElementById("itemsdetail");
+    const submitbtn=document.getElementById("submitbtn");
+    const icon=document.querySelector(".icon");
+    newAddElement.addEventListener("click",(e)=>{
+        e.preventDefault();
+        const elemenvalue=newAddElement.textContent;
+        details.style.display="block";
+        icon.innerText=elemenvalue;
+        submitbtn.addEventListener("click", ()=>{
+            details.style.display="none";
+        })
+    
+    })
+    
+
+
+
+
+
+
+
 
 
 });
@@ -68,6 +119,17 @@ dropableaddelement.forEach((zone) => {
   
     return closestTask;
   };
+
+//   on click items we get a detail of that items
+// const items=document.querySelectorAll(".items");
+// const itemsdetail=document.querySelector(".items-detail");
+// items.forEach((task)=>{
+//     task.addEventListener("click", (e)=>{
+//         e.preventDefault();
+//         itemsdetail.style
+
+//     })
+// })
 
 
 
