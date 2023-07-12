@@ -25,7 +25,7 @@ h1{
     margin: 10px auto;
 }
 .input-container{
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     justify-content: center;
     height: 50px;
@@ -90,12 +90,20 @@ h1{
 .item{
     height: 50px;
     width: 95%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 5px;
     margin-left: 5px;
     padding: 5px 5px;
     border-radius: 5px;
     background-color: bisque;
     cursor: move;
-    
+    overflow: hidden;
+    font-size: 16px;
+   /* box-shadow: #0000ff; */
 }
+.is-dragging {
+    scale: 1.05;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: rgb(50, 50, 50);
+    color: white;
+  }
